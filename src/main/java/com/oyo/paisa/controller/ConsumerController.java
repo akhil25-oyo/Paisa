@@ -25,7 +25,7 @@ public class ConsumerController {
     public hotel_room_details postData(@RequestBody ConsumerPricePostRequest consumerRequest) {
        return  consumerService.postconsumerRequest(consumerRequest);
     }
-    @GetMapping(value = "/getdata")
+    @PostMapping(value = "/getdata")
     public ConsumerPriceGetResponse getData(@RequestBody ConsumerPriceGetRequest consumerRequest) {
         return  consumerService.getconsumerRequest(consumerRequest);
     }
